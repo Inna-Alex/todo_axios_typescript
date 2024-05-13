@@ -1,0 +1,49 @@
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/amber.css';
+@import '@radix-ui/colors/tomato.css';
+@import '@radix-ui/colors/sky.css';
+
+.button {
+	height: auto;
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 1.6rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	cursor: pointer;
+	overflow: hidden; 
+	&__toAdd {
+		background-color: var(--amber-10);
+		color: var(--black-1);
+		&:hover {
+			background-color: var(--amber-8);
+			color: var(--white);
+		}
+	}
+	&__toUpdate {
+		background-color: var(--sky-9);
+		color: var(--black-2);
+		&:hover {
+			background-color: var(--sky-8);
+			color: var(--sky-2);
+		}
+	}
+	&__toCancel {
+		background-color: var(--gray-7);
+		color: var(--black-1);
+		&:hover {
+			background-color: var(--gray-10);
+			color: var(--white);
+		}
+	}
+	&__toDelete {
+		background-color: var(--tomato-7);
+		color: var(--black-1);
+		&:hover {
+			background-color: var(--tomato-9);
+			color: var(--white);
+		}
+	}
+}

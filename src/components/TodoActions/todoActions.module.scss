@@ -1,0 +1,33 @@
+.todoActions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.icon {
+	font-size: 2rem;
+	padding: 0.5rem;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.3s ease background-color;
+	&__edit {
+		background-color: var(--sky-4);
+		color: var(--black-2);
+		&:hover {
+			background-color: var(--sky-10);
+			color: var(--sky-2);
+		}
+	}
+	&__delete {
+		background-color: var(--tomato-5);
+		color: var(--black-2);
+		&:hover {
+			background-color: var(--tomato-9);
+			color: var(--tomato-2);
+		}
+	}
+}

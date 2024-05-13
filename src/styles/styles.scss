@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Quicksand-Light";
+  src: local("Quicksand-Light"),
+    url("../fonts/Quicksand/Quicksand-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: local("Quicksand-Light"),
+    url("../fonts/Quicksand/Quicksand-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: local("Quicksand-Regular"),
+    url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand-SemiBold";
+  src: local("Quicksand-SemiBold"),
+    url("../fonts/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: local("Quicksand-Bold"),
+    url("../fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--black-1: #646681;
+	--black-2: #585858;
+	--bg-1: #f8f8ff;
+	--bg-2: #ecedf6;
+	--bg-3: #cccdde;
+	--gray-1: #eee;
+	--gray-2: #dedfe1;
+	--black: black;
+	--white: white;
+	--primarYellow: #f1c232;
+	--bg-l: #d6d6f0;
+	--bg-d: #2e2e66;
+	--fg-d: var(--white);
+}
+html {
+	font-size: 10px;
+}
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--bg-1);
+}
+
+* {
+	font-family: 'Quicksand-Medium', sans-serif;
+}

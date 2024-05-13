@@ -1,0 +1,16 @@
+.headerButtons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.toFlex {
+  display: inline-flex;
+}
+
+.themeSetting {
+  margin-top: 10px;
+}

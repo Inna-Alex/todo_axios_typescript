@@ -1,0 +1,178 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/tomato.css';
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: var(--bg-2);
+	max-width: 500px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 8px;
+	position: relative;
+}
+
+.closeButton {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	transform: translateY(-100%);
+	font-size: 2.5rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	background-color: var(--gray-1);
+	color: var(--black-2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.3s ease all;
+	z-index: -1;
+
+	&:hover {
+		background-color: #e32525;
+		color: white;
+	}
+}
+
+.formTitle {
+	// color: var(--black-1);
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	text-transform: capitalize;
+}
+
+.formLight {
+	color: var(--black-1);
+	label,
+	span {
+		color: var(--black-1);
+	}
+}
+.formDark {
+	color: var(--white);
+	background: var(--bg-d);
+	label,
+	span {
+		color: var(--white);
+	}
+}
+
+.form {
+	width: 100%;
+
+	label,
+	span {
+		font-size: 1.6rem;
+		// color: var(--black-1);
+
+		input {
+			color: var(--black-1);
+			box-sizing: border-box;
+			margin-top: 0.5rem;
+			margin-bottom: 2rem;
+			width: 100%;
+			padding: 1rem;
+			background-color: var(--white);
+			font-size: 1.6rem;
+			border-radius: 6px;
+			outline: none;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
+
+// .buttonContainer {
+// 	display: flex;
+// 	justify-content: flex-start;
+// 	align-items: center;
+// 	margin-top: 2rem;
+// 	gap: 1rem;
+// }
+
+.Button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	padding: 0 15px;
+	font-size: 15px;
+	line-height: 1;
+	font-weight: 500;
+	height: 35px;
+}
+
+.Button.green {
+	background-color: var(--green-4);
+	color: var(--green-11);
+}
+
+.Button.green:hover {
+	background-color: var(--green-5);
+}
+
+.Button.green:focus {
+	box-shadow: 0 0 0 2px var(--green-7);
+}
+
+.ButtonContainer {
+	display: flex;
+	margin-top: 25;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 2rem;
+	gap: 1rem;
+}
+
+.errTitleText {
+	color: var(--tomato-11);
+	margin-bottom: 1.5rem;
+	margin-top: -1.5rem;
+}
+
+.errStatusText {
+	color: var(--tomato-11);
+	margin-bottom: 2rem;
+	margin-top: 0.5rem;
+}
+
+.errTitleField {
+	border: 2px solid var(--tomato-11);
+}
+
+.select {
+	color: var(--black-2);
+	border: none;
+	cursor: pointer;
+	height: auto;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 1.6rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	outline: none;
+
+	&:focus {
+		outline: none;
+	}
+}
